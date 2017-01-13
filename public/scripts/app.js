@@ -1,4 +1,6 @@
-angular.module('restaurantApp', ['ngRoute'])
+console.log("hello");
+angular
+       .module('restaurantApp', ['ngRoute'])
        .config(config);
 
 
@@ -10,17 +12,17 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
     .when('/', {
-      templateUrl: 'templates/index.html',  // this "partial" html file
+      templateUrl: 'templates/home',  // this "partial" html file
       controller: 'IndexController',         // uses this controller
       controllerAs: 'IndexCtrl'              // with this name
     })
     .when('/map', {
-      templateUrl: 'templates/map.html',
+      templateUrl: 'templates/map',
       controller: 'MapController',
       controllerAs: 'MapCtrl'
     })
     .when('/restaurant',{
-      templateUrl: 'templates/restaurant.html',
+      templateUrl: 'templates/restaurant',
       controller: 'RestaurantController',
       controllerAs: 'RestaurantCtrl'
     })

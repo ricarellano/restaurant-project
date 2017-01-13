@@ -1,4 +1,5 @@
-angular.module('restaurantApp')
+angular
+  .module('restaurantApp')
   .controller('RestaurantController', RestaurantController);
 
   RestaurantController.$inject=['$http','$routeParams', '$location'];

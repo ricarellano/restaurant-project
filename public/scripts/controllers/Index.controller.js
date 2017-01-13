@@ -1,4 +1,6 @@
-angular.module('restaurantApp')
+
+angular
+  .module('restaurantApp')
   .controller('IndexController', IndexController);
 
   IndexController.$inject=['$http','$routeParams', '$location'];

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restaurantApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <title>Restaurant Project </title>
+
+    <!-- materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+     <!-- ngRoute -->
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+     <!-- materialize angular -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet"></link>
+
+      <!-- Google Maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxSsMHxm5aYAEEOb5Ok_6i7Qn5hOIGeAI&callback=initMap"
+         async defer></script>
+
+     <!-- custom script (angular app) -->
+     <script type="text/javascript" src="/scripts/app.js"></script>
+     <script type="text/javascript" src="/scripts/controllers/Index.controller.js"></script>
+     <script type="text/javascript" src="/scripts/controllers/Map.controller.js"></script>
+     <script type="text/javascript" src="/scripts/controllers/Restaurant.controller.js"></script>
+
+  </head>
+  <body>
+
+    <div ng-view></div>  <!-- html partial content gets added here -->
+
+
+  </body>
+</html>
