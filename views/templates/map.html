@@ -1,2 +1,32 @@
-<h3>{{MapCtrl.name}}</h3>
-<div id="map"></div>
+<!-- <h3>{{MapCtrl.name}}</h3> -->
+
+
+<div class="row">
+  <div class="welcome col s12">
+    <p>Welcome!</p>
+  </div>
+</div>
+<div class="row">
+
+    <div class="map col s6 offset-m3" map-lazy-load="https://maps.google.com/maps/api/js">
+      <ng-map center="[37.7749, -122.4194]" zoom="5"></ng-map>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col s10 right-align">
+    <a href='#demoModal' modal class="waves-effect waves-light btn" ng-click="">Donate</a>
+  </div>
+
+  <div id="demoModal" class="modal">
+    <div class="modal-content">
+        <h4>Modal header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+</div>
+
+
+</div>

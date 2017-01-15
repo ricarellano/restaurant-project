@@ -1,20 +1,58 @@
+/*body{
+  background-image: url("/images/bread.jpg");
+  background-size: cover;
+
+}*/
+
 #btn-restaurant{
   height: auto;
     min-height: 20px;
     line-height: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
+    background-color: #73bf45;
+
+
+}
+#btn-soup-kitchen{
+  height: auto;
+    min-height: 20px;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #73bf45;
 
 }
 
 .btn, .btn-large{
   text-transform: none;
+  /*color: #73bf45;*/
 }
 
 .title{
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
+  color: white;
 
 }
 
-.map-canvas { height: 400px; }
+.title1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+
+
+}
+
+
+
+.welcome{
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+}
+
+.map{
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
+  -moz-box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
+  box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
+}

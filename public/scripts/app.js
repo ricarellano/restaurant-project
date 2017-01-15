@@ -1,6 +1,6 @@
 console.log("hello");
 angular
-       .module('restaurantApp', ['ngRoute'])
+       .module('restaurantApp', ['ngRoute', 'ngMap'])
        .config(config);
 
 

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="/styles/styles.css">
-
     <!-- angular -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
 
@@ -22,11 +21,17 @@
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
 
       <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway:400,500,500i" rel="stylesheet"></link>
 
       <!-- Google Maps -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxSsMHxm5aYAEEOb5Ok_6i7Qn5hOIGeAI&callback=initMap"
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxSsMHxm5aYAEEOb5Ok_6i7Qn5hOIGeAI"
          async defer></script>
+         
+         <!-- Ng Maps -->
+     <script src="/bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+         <!-- <script src='ng-maps.js'></script> -->
+
+      <!-- <script src="/vendor/ngmap/build/scripts/ng-map.min.js"></script> -->
 
      <!-- custom script (angular app) -->
      <script type="text/javascript" src="/scripts/app.js"></script>
@@ -36,7 +41,7 @@
 
   </head>
   <body>
-
+<!-- <img src="/images/heaven.jpg" alt=""> -->
     <div ng-view></div>  <!-- html partial content gets added here -->
 
 

@@ -1,23 +1,23 @@
 <!-- <h3>{{IndexCtrl.name}}</h3> -->
-<div class="container">
 
-</div>
+
+<!-- <img src="/images/heaven.jpg" alt=""> -->
 <div class="row">
   <div class="col s10 offset-m1 title">
-    <p>Welcome to <br> Community Feed!</p>
+    <p class="title1">Welcome to <br> Community Feed!</p>
   </div>
   <!-- Button -->
   <div class="row ">
     <div class="col s6 right-align">
-      <a id="btn-restaurant"class="waves-effect waves-light btn-large" ng-click="showForm = !showForm">Restaurant<br>Owner</a>
+      <a id="btn-restaurant"class="waves-effect waves-light btn-large" ng-click="showResForm = !showResForm">Restaurant<br>Owner</a>
     </div>
     <div class="col s6">
-      <a id="btn-restaurant"class="waves-effect waves-light btn-large">Soup<br>Kitchen</a>
+      <a id="btn-soup-kitchen"class="waves-effect waves-light btn-large" ng-click="showKitForm = !showKitForm">Soup<br>Kitchen</a>
     </div>
   </div>
 
-<!-- Form -->
-<div class="row " ng-if="showForm">
+<!-- Restaurant Form -->
+<div class="row " ng-if="showResForm">
   <form ng-submit="">
     <div input-field class="col s6 m4 offset-m4">
       <label >Name</label>
@@ -32,13 +32,27 @@
     <input type="text" ng-model="dummyInputs.inputFieldMail" length="150" required="">
   </div>
   <div class="col s8 right-align">
-    <a ng-href="map" ng-click=""class="waves-effect waves-light btn" >Become a Community feeder Now!</a>
+    <a ng-href="/map/" ng-click=""class="waves-effect waves-light btn ">Become a Community feeder Now!</a>
   </div>
   </form>
 </div>
-
-
-
-
-</div>
+<!-- Soup Kintchen Form -->
+<div class="row " ng-if="showKitForm">
+  <form ng-submit="">
+    <div input-field class="col s6 m4 offset-m4">
+      <label >Name</label>
+      <input  placeholder="Full Name"type="text" ng-model="dummyInputs.inputFieldName" length="150" required="">
+  </div>
+  <div input-field class="col s6 m4 offset-m4">
+    <label>Organization Name</label>
+    <input type="text" ng-model="dummyInputs.inputFieldOrg" length="150" required="">
+  </div>
+  <div input-field class="col s6 m4 offset-m4">
+    <label>Email</label>
+    <input type="text" ng-model="dummyInputs.inputFieldMail" length="150" required="">
+  </div>
+  <div class="col s8 right-align">
+    <a ng-href="/map/" ng-click=""class="waves-effect waves-light btn" >Become a Community feeder Now!</a>
+  </div>
+  </form>
 </div>
