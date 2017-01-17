@@ -18,16 +18,30 @@ body{
 border-bottom: 2px solid #CCAF3A;
 }
 
-
-
-
+.donation{
+  font-weight: 700;
 }
+.skImg{
+  background-image: url("/images/soup_kitchen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+.maps{
+font-weight: 700;
+}
+
+.box{
+  padding-top: 0;
+  margin-top: 0;
+}
+
 #bg {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.7;
 
+  -webkit-filter: opacity(.5) drop-shadow(1px 1px 20px black);
 }
 input[type=search] {
 	padding: 3px;
@@ -38,7 +52,7 @@ input[type=search] {
 }
 
 .btn:hover, .btn-large:hover{
-  background-color: #FFC062;
+  background-color: #FFC062 !important;
 }
 
 .first-msg{

@@ -12,7 +12,7 @@
 <!-- Form About you -->
 <div ng-show="MapCtrl.process == 0">
   <div class="row">
-    <div class="col s12 offset-m2">
+    <div class="col s12 offset-m2 maps">
       <p>LET US KNOW ABOUT YOU</p>
     </div>
   </div>
@@ -22,28 +22,25 @@
     <form ng-submit="">
 
       <div input-field  class="col s6 m4 offset-m3">
-        <label >Name</label>
-        <input placeholder="Full Name"type="text" ng-model="IndexCtrl.dummyInputs.name" length="150" required>
+
+        <input placeholder="Name"type="text" ng-model="IndexCtrl.dummyInputs.name" length="150" required>
     </div>
     <div input-field  class="col s6 m4 offset-m3">
-      <label>Organization Name</label>
-      <input type="text" ng-model="IndexCtrl.dummyInputs.org" length="150" required>
+
+      <input placeholder="Organization Name"type="text" ng-model="IndexCtrl.dummyInputs.org" length="150" required>
     </div>
     <div input-field  class="col s6 m4 offset-m3">
-      <label>Organization Address</label>
-      <input type="text" ng-model="IndexCtrl.dummyInputs.add" length="150" required>
+
+      <input placeholder="Organization Address" type="text" ng-model="IndexCtrl.dummyInputs.add" length="150" required>
     </div>
     <div input-field class="col s6 m4 offset-m3">
-      <label>Email</label>
-      <input type="text" ng-model="IndexCtrl.dummyInputs.mail" length="150" required>
+
+      <input placeholder="Email"type="text" ng-model="IndexCtrl.dummyInputs.mail" length="150" required>
     </div>
-    <div input-field class="col s6 m4 offset-m3">
-      <label>Phone Number</label>
-      <input type="text" ng-model="IndexCtrl.dummyInputs.phone" length="150" required>
-    </div>
+
   </div>
 <div class="row">
-  <div class="col s12 offset-m1">
+  <div class="col s12 offset-m1 box">
     <p>
       <input type="checkbox" id="test5" />
       <label for="test5">I agree that food items I donate was made within 2days before I complete the form and the items I send to Community Feed are safe to consume </label>
@@ -57,7 +54,7 @@
 <!-- Form About your Sharing -->
 <div ng-show="MapCtrl.process == 1">
   <div class="row">
-    <div class="col s12 offset-m2">
+    <div class="col s12 offset-m2 maps">
       <p>LET US KNOW ABOUT WHAT YOU ARE SHARING</p>
     </div>
   </div>
@@ -93,7 +90,7 @@
   <!-- Map -->
 <div ng-show="MapCtrl.process == 2">
   <div class="row">
-    <div class="col s12 offset-m2">
+    <div class="col s12 offset-m2 maps">
       <p>Find Near Soup Kitchen</p>
 
     </div>
@@ -124,9 +121,15 @@
 
 <div ng-show="MapCtrl.process == 3">
   <div class="row">
-    <div class="col s12 offset-m2">
+    <div class="col s12 offset-m2 donation">
       <p>Thank you for your donation!</p>
       <p>We will let John from Soup Kitchen to let you know your donation.</p>
+    </div>
+    <div class="row">
+      <div class="col s12 skImg">
+
+      </div>
+
     </div>
   </div>
 </div>
