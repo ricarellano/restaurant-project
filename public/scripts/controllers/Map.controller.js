@@ -21,7 +21,7 @@ angular
           id: 1,
           position: "37.786156,-122.412975",
           infoWindow: "1-window",
-          name: "St. Anthony Foundation",
+          name: "Soup Kitchen",
           address: "150 Golden Gate Ave, San Francisco, CA 94102"
         },
 
