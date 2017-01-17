@@ -4,6 +4,7 @@ angular
        .config(config);
 
 
+
  ////////////
 // ROUTES //
 ////////////
@@ -25,6 +26,11 @@ function config (  $routeProvider,   $locationProvider  )  {
       templateUrl: 'templates/restaurant',
       controller: 'RestaurantController',
       controllerAs: 'RestaurantCtrl'
+    })
+    .when('/soupKitchen',{
+      templateUrl: 'templates/soup-kitchen',
+      controller: 'SoupKitchenController',
+      controllerAs: 'SoupKitchenCtrl'
     })
     .otherwise({
       redirectTo: '/'

@@ -1,0 +1,25 @@
+<h3>Thank you!</h3>
+<div class="row">
+  <div class="col s12 offset-m4">
+    <p>List of community feeders around you.</p>
+  </div>
+
+</div>
+
+<div ng-repeat="sk in SoupKitchenCtrl.soupKitchen">
+  <div class="row">
+    <div class="col s2 offset-m1">
+      <img class="sk-img" src="{{sk.image}}" alt="">
+
+    </div>
+    <div class="col s4">
+       <p>{{sk.name}}</p>
+       <p><strong>Address:</strong> {{sk.address}}</p>
+       <p><strong>Phone:</strong> {{sk.phone}}</p>
+       <p><strong>Web:</strong><a ng-href="{{sk.web}}">  {{sk.web}}</a></p>
+
+
+
+    </div>
+  </div>
+</div>

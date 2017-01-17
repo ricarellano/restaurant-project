@@ -1,53 +1,103 @@
-/*body{
-  background-image: url("/images/bread.jpg");
-  background-size: cover;
+body{
+  font-family: 'Noto Sans', sans-serif;
 
+}
+/*.home {
+  background-image: url("/images/bread.jpg");
+  background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: cover;
 }*/
+
+/*Home*/
+.home{
+  position: relative;
+}
+[type="checkbox"]:checked+label:before{
+  border-right: 2px solid #CCAF3A;
+border-bottom: 2px solid #CCAF3A;
+}
+
+
+
+
+}
+#bg {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+
+}
+input[type=search] {
+	padding: 3px;
+	font-family: Georgia;
+	border: 1px solid black;
+	background: white;
+	line-height: 1;
+}
+
+.btn:hover, .btn-large:hover{
+  background-color: #FFC062;
+}
+
+.first-msg{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  color: white;
+
+}
+
+.btn{
+background-color: #CCAF3A;
+color: #999278;
+}
 
 #btn-restaurant{
   height: auto;
-    min-height: 20px;
+    min-height: 25px;
     line-height: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #73bf45;
+    background-color: #CCAF3A;
+    color: #999278;
 
 
 }
 #btn-soup-kitchen{
   height: auto;
-    min-height: 20px;
+    min-height: 25px;
     line-height: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #73bf45;
+    background-color: #CCAF3A;
+    color: #999278;
 
 }
 
 .btn, .btn-large{
   text-transform: none;
+
   /*color: #73bf45;*/
 }
 
 .title{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 50px;
   color: white;
-
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
-.title1{
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
 
-
-}
 
 
 
 .welcome{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 35px;
+
 }
 
 .map{
@@ -55,4 +105,12 @@
   -webkit-box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
   -moz-box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
   box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.99);
+}
+
+.btn-sk{
+  padding-top: 40px;
+}
+/*Soup Kitchen*/
+.sk-img{
+  height: 100px;
 }
